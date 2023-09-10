@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>MSP Sales Calculator</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>MSP Sales Calculator</h1>
+        <img id="logo" src="" alt="Your Logo Here" />
+    </header>
+    <main>
+        <div class="input-section">
+            <label for="annualRevenue">Annual Revenue:</label>
+            <input type="number" id="annualRevenue" placeholder="Enter annual revenue" />
+            
+            <label for="annualServiceFee">Annual Service Fee:</label>
+            <input type="number" id="annualServiceFee" placeholder="Enter annual service fee" />
+        </div>
+        <div class="output-section">
+            <p>Revenue Loss Per Minute: $<span id="revenueLossPerMinute">0</span></p>
+            <p>MSP Service Cost Per Minute: $<span id="serviceCostPerMinute">0</span></p>
+        </div>
+        <button onclick="calculate()">Calculate</button>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
